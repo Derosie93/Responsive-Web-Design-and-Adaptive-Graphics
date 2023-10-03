@@ -6,121 +6,162 @@ body{
 }
 
 /* ---------------------- Header ----------------------------- */
-
-.header-container{
-    max-width: 2000px;
+header{
     width: 100%;
-    min-height: 100px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.header-container{
+    width: 50%;
+    height: 100px;
+    display: flex;
+   justify-content: space-between;
+    align-items: center;
+}
+
+.logotype{
+    width: 100px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24;
+    margin-left: 2%;
+}
+
+.nav-container{
+    width: 300px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  margin-right: 10%;
+   
+}
+
+.fa-ellipsis{
+    color: white;
+    margin-left: 20px;
     
+}
 
-    .logotype{
-        width: 50%;
-        height: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        font-family: 'Poppins', sans-serif;
-        font-size: 24;
-        flex-wrap: wrap;
-    }
+.nav-ul{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+   
+    
+}
 
-    .nav-container{
-        width: 50%;
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+.nav-li{
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    .nav-li{
-        width: 250px;
-        height: 25px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .nav-links{
-        width: 50px;
-        height: 25px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 20px;
-        text-decoration: none;
-        font-family: 'Poppins', sans-serif;
-        color: white;
-    }
+.nav-links{
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* ------------------------ Header End ------------------------ */
     
 /* ------------------------ Section 1 ------------------------- */
 
-.section-1-container{
-    max-width: 2000px;
+.section-1-container{ 
+    max-width: 1920px;
     width: 100%;
-    min-height: 250px;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
 
-    .text-container{
-        max-width: 400px;
-        width: 100%;
-        min-height: 200px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
+.text-container{
+    max-width: 400px;
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.japan{
+    max-width: 300px;
+    width: 100%;
+    height: 90px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 84px;
+    line-height: 102px;
+    color: white;
+}
+
+.small-text-container{
+    max-width: 600px;
+    width: 100%;
+    min-height: 70px;
+}
+
+.small-text{
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    line-height: 25px;
+    color: white;
+}
+
+.pic-mountain-container{
+    display: flex;
+    justify-content: center;
+    max-width: 1920px;
+    width: 100%;
+    min-height: 250px;
+    margin-top: 50px;
+}
+
+.pic-mountain{
+    max-width: 870px;
+    width: 100%;
+    min-height: 250px;
+}
+
+/* ---------------------- End Section 1 ----------------------- */
+
+@media screen and (max-width: 1100px) {
+    .pic-mountain{
+        width: 80%;
     }
 
-    .japan{
-        width: 250px;
-        height: 70px;
-        font-family: 'Poppins', sans-serif;
-        font-size: 84px;
-        line-height: 102px;
-        color: white;
-    }
-
-    .small-text-container{
-        max-width: 600px;
-        width: 100%;
-        min-height: 70px;
-    }
-
-    .small-text{
-        font-family: 'Poppins', sans-serif;
-        font-size: 13px;
-        line-height: 25px;
-        color: white;
+    .header-container{
+        width: 80%;
+     
     }
 }
 
-/* --------------------- End Section 1 --------------------------*/
-
-/* ------------------------ Section 2 ------------------------- */
-
-.section-2-container{
-    max-width: 2000px;
-    width: 100%;
-    min-height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-
-    .pic-mountain{
-        max-width: 870px;
-        width: 100%;
-        min-height: 250px;
-        margin-top: 50px;
-       
+@media screen and (max-width: 600px){
+    .nav-ul{
+        display: none;
     }
+
+    .japan{
+        font-size: 64px;
+    }
+
+    .small-text-container{
+      width: 80%;
+    }
+    
 }
