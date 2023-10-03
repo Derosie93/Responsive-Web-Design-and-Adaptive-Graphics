@@ -3,7 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Japan</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header-container">
+      <div class="logotype"><p>Head.</p></div>
+      <nav class="nav-container">
+        <ul class="nav-list">
+          <li class="nav-li">
+            <a href="/pages/works.html" class="nav-links">Works</a>
+            <a href="/pages/services.html" class="nav-links">Services</a>
+            <a href="/pages/contacts.html" class="nav-links">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="section-1-container">
+      <div class="text-container">
+        <h1 class="japan">Japan</h1>
+        <div class="small-text-container">
+          <p class="small-text">
+            Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec
+            viverra eleifend lacus, vitae ullamcor.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section-2-container">
+      <div class="pic-mountain">
+        <picture>
+          <source media="(max-width: 800px)" srcset="./images/mountain.png" />
+          <source media="(max-width: 1000px)" srcset="./images/mountain.png" />
+          <source media="(min-width: 1001px)" srcset="./images/mountain.png" />
+          <img src="images/mountain.png" alt="pic-of-a-mountain" />
+        </picture>
+      </div>
+    </section>
+  </body>
 </html>
